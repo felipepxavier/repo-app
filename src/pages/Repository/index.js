@@ -78,10 +78,6 @@ class Repository extends Component {
         this.loadIssues();
     };
 
-    async handleChange(event) {
-        await this.setState({issueSelected: event.target.value});
-    }
-
     render() {
         const { repository, loading, issues, filters, filterIndex, page } = this.state;
 
